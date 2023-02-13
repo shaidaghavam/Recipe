@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Dessert"
+    android:background="@drawable/desertedited">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/cardview"
+        android:id="@+id/constraintDessert"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeDesert"
+            app:layout_constraintTop_toTopOf="@id/constraintDessert"
+            app:layout_constraintStart_toStartOf="@id/constraintDessert"
+            app:layout_constraintEnd_toEndOf="@id/constraintDessert"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Doughnut"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Imagedoughnot"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/pink"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Imagedoughnot"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview2"
+                android:src="@drawable/donought"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeDesert"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeDesert"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeDesert"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeDesert2"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeDesert"
+            app:layout_constraintStart_toStartOf="@id/constraintDessert"
+            app:layout_constraintEnd_toEndOf="@id/constraintDessert"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Pudding"
+                android:textColor="@color/pink"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Textpodding"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Textpodding"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pudding"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeDesert2"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeDesert2"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeDesert2"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeDesert3"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeDesert2"
+            app:layout_constraintStart_toStartOf="@id/constraintDessert"
+            app:layout_constraintEnd_toEndOf="@id/constraintDessert"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/TiramisoImage"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/tira"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeDesert3"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeDesert3"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeDesert3"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Tiramisu"
+                android:textColor="@color/pink"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/TiramisoImage"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

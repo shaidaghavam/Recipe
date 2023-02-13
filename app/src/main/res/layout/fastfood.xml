@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="FastFood"
+    android:background="@drawable/pexels_andy_kuzma_2909822">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/cardview"
+        android:id="@+id/constraintFastFood"
+        >
+
+
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeFastFood"
+            app:layout_constraintTop_toTopOf="@id/constraintFastFood"
+            app:layout_constraintStart_toStartOf="@id/constraintFastFood"
+            app:layout_constraintEnd_toEndOf="@id/constraintFastFood"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Pizza"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Hamburgerimage"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/orange"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Hamburgerimage"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview2"
+                android:src="@drawable/pizza"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeFastFood"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeFastFood"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeFastFood"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeFastFood2"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeFastFood"
+            app:layout_constraintStart_toStartOf="@id/constraintFastFood"
+            app:layout_constraintEnd_toEndOf="@id/constraintFastFood"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Hamburger"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/TextAsh"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/TextAsh"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/hamburger"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeFastFood2"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeFastFood2"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeFastFood2"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeFastFood3"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeFastFood2"
+            app:layout_constraintStart_toStartOf="@id/constraintFastFood"
+            app:layout_constraintEnd_toEndOf="@id/constraintFastFood"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/pizzaImage"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/frrnch"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeFastFood3"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeFastFood3"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeFastFood3"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="French Fries"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/pizzaImage"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/backFastFood"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeFastFood3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/cardview2"
+            android:layout_marginTop="20sp"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            />
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

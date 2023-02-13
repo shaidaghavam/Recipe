@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/agnieszka_kowalczyk_obmdrl5pfwi_unsplash"
+    tools:context="Traditional">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/cardview1"
+        android:id="@+id/constraintTraditional"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeTraditional"
+            app:layout_constraintTop_toTopOf="@id/constraintTraditional"
+            app:layout_constraintStart_toStartOf="@id/constraintTraditional"
+            app:layout_constraintEnd_toEndOf="@id/constraintTraditional"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Gormeh Sabzki"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ghorme"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/gormeGreen"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ghorme"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ghorme"
+                android:background="@drawable/cardview2"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeTraditional"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeTraditional"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeTraditional"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeTraditional2"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeTraditional"
+            app:layout_constraintStart_toStartOf="@id/constraintTraditional"
+            app:layout_constraintEnd_toEndOf="@id/constraintTraditional"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Ash"
+                android:textColor="@color/gormeGreen"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/TextAsh"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"
+
+                android:textStyle="bold"/>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/TextAsh"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ash__2_"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeTraditional2"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeTraditional2"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeTraditional2"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/cardRecipeTraditional3"
+            app:layout_constraintTop_toBottomOf="@id/cardRecipeTraditional2"
+            app:layout_constraintStart_toStartOf="@id/constraintTraditional"
+            app:layout_constraintEnd_toEndOf="@id/constraintTraditional"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/cardview2"
+            >
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:src="@drawable/fese"
+                android:id="@+id/FesenjoonImage"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="@id/cardRecipeTraditional3"
+                app:layout_constraintTop_toTopOf="@id/cardRecipeTraditional3"
+                app:layout_constraintBottom_toBottomOf="@id/cardRecipeTraditional3"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Fesenjoon"
+                android:textColor="@color/gormeGreen"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/FesenjoonImage"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/backTraditional"
+            app:layout_constraintBottom_toBottomOf="@id/constraintTraditional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/cardview2"
+            android:text="Back"
+            android:textStyle="bold"
+            android:textColor="@color/LoveRed"
+            android:textSize="30sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

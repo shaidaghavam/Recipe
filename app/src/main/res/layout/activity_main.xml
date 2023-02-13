@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pexels_julie_aagaard_2097090"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint"
+        android:layout_height="375dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/cardview"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/colorfulorange"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            android:id="@+id/fastFoodImage"
+            android:text="Fastfood"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cardviewcolorful"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintBottom_toTopOf="@id/fastFoodImage"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            android:id="@+id/traditionalImage"
+            android:text="Iranian"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/desertImage"
+            app:layout_constraintTop_toBottomOf="@id/fastFoodImage"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            android:text="Dessert"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pinkcardview"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
